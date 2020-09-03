@@ -9,7 +9,7 @@
 
 // codice javascript ricerca
 $(document).ready(function(){
-  $("#myInput").keyup( function() {
+  $("#search").keyup( function() {
 	  
     var value = $(this).val().toLowerCase();
      
@@ -18,6 +18,7 @@ $(document).ready(function(){
     });
   });
 });
+
 //codice javascript checkbox
 // $(document).ready(function() {
 //     $(".checkid").click(function() {

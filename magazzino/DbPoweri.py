@@ -11,7 +11,7 @@ class DbPoweri():
 
     def connection(self):
         connection = pyodbc.connect(driver='{iSeries Access ODBC Driver}',
-                        system='172.18.0.43',uid='QPGMR',pwd='QPGMR')
+                        system='172.18.0.43',uid='FAQ400WEB',pwd='FAQ400WEB')
         self.c1 = connection.cursor()
          
     def selectMgesi(self,c1 ):
@@ -27,3 +27,8 @@ class DbPoweri():
         
         row = c1.fetchall()
         return row
+
+    def callUpdArtp(self,c1,cdar,dsar):   
+        params = [cdar, dsar]
+        c1.execute("{call UPDARTP (?,?)}", params)
+          

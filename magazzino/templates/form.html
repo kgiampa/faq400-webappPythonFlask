@@ -3,10 +3,14 @@
 <form>
     <div class="form-group">
       <label for="exampleFormControlInput1">Articolo</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" value={{articolo}}>
+      <input  name="cdar" readonly class="form-control" id="exampleFormControlInput1" value="{{articolo}}">
     </div>
+    <label for="exampleFormControlInput1">Descrizione</label>
+    <input   name="dsar" class="form-control" id="exampleFormControlInput1" value="{{descrizione}}">
+  </div>
+  <button name="btnUpd" value="btnUpd" class="btn btn-primary" type="submit">Update</button>
     <div class="form-group">
-        <img src="/static/{{articolo}}.jpg" class="image">
+        <img src="/static/img/{{articolo}}.jpg" class="image">
     </div>
      
      

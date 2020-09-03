@@ -1,0 +1,30 @@
+.card {
+   margin:10px;
+   padding:10px;
+   border-color: rgb(0, 89, 255);
+}
+
+.table {
+   margin:10px;
+   padding:20px;
+   width: 90%;
+    
+    
+ }
+
+ form {
+   margin:5px;
+   padding:5px;
+   width: 90%;
+    
+ }
+
+ .image{
+   width: 30%;
+ }
+
+ .btn {
+   margin:10px;
+   padding:10px;
+     
+}

@@ -23,7 +23,7 @@
        <tr> 
             {%for r in range(0, lenr) %} 
                 {%if r==0%}
-                <td> <input value={{rows[i][0]}} id="checkBox" name="checkBox" type="checkbox" class="checkid"></td> 
+                <td> <input value="{{rows[i][0]}},{{rows[i][1]}}" id="checkBox" name="checkBox" type="checkbox" class="checkid"></td> 
                 {%endif%}
                 <td class="riga"  >{{rows[i][r] }}</td> 
             {%endfor%} 
